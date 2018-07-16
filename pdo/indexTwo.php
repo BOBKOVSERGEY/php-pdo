@@ -7,7 +7,8 @@ try {
   echo 'Нет соединения с БД: ' . $e->getMessage();
 }
 
-class Text {
+/*маппинг*/
+/*class Text {
   public $id_good;
   public $title;
   public $description;
@@ -27,7 +28,14 @@ $result = $pdo->query($sql);
 
 $row = $result->fetchAll(PDO::FETCH_CLASS, 'Text');
 
+foreach ($row as $obj) {
+  echo $obj->id_good . "----------------------";
+  $obj->showText();
+}
+
 
 echo '<pre>';
   print_r($row);
 echo '</pre>';
+*/
+
