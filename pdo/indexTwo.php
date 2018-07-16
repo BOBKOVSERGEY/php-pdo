@@ -39,3 +39,21 @@ echo '<pre>';
 echo '</pre>';
 */
 
+$id = 3;
+/* подготовленные запросы увеличиваеют быстродействие и безопасность */
+$sql = "SELECT id_good, title, short_description, description FROM goods WHERE id_good = :id";
+// подготовливаем запрос
+$result = $pdo->prepare($sql);
+
+$result->bindParam(":id", $id, PDO::PARAM_INT);
+
+// выполняем запрос
+$result->execute();
+
+
+$row = $result->fetchAll(PDO::FETCH_ASSOC);
+
+echo '<pre>';
+  print_r($row);
+echo '</pre>';
+
