@@ -43,8 +43,8 @@ echo '<pre>';
 echo '<pre>';
 
 
-$string1 = '/upload/images/Изображения/Лаки для ногтей/Лаки 3D Luhe/Лак для ногтей 3D\'Luxe № 640 (лаки с мелкими 3D-блёстками).jpg';
-$string2 = '/upload/images/Изображения/Лаки для ногтей/Лаки 3D Luxe/Лак для ногтей 3D\'Luxe № 640 (лаки с мелкими 3D-блёстками).jpg';
+$string1 = '/upload/images/Изображения/Лаки для ногтей/Лаки Wish/420.jpg';
+$string2 = '/upload/images/Изображения/Лаки для ногтей/Лаки Wish/420.jpg';
 
 echo 'String1' . $string1 . ' nnn<br>';
 echo 'String2' . $string2 . ' nnn<br>';
